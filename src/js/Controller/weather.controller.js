@@ -5,7 +5,20 @@ export class WeatherController{
     }
 
     async getWeatherByCityName(cityName){
-        await this.service.getWeatherByCityName(cityName)
-        this.view.render(this.service.weatherData)
+        try{
+
+            await this.service.getWeatherByCityName(cityName)
+            this.view.render(this.service.weatherData)
+
+        } catch(e){
+
+            console.log(e)
+            this.view.renderError()
+
+        }
+    }
+
+    renderErrorOut(){
+        this.view.renderErrorOut()
     }
 }

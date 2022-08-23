@@ -1,5 +1,5 @@
 export class WeatherModel{
-    constructor(name, country, humidity, temp, temp_max, temp_min, weather, speed){
+    constructor(name, country, humidity, temp, temp_max, temp_min, weather, speed, coord){
         this.name = name
         this.country = country,
         this.humidity = humidity,
@@ -8,5 +8,7 @@ export class WeatherModel{
         this.temp_min = temp_min,
         this.weather = weather,
         this.speed = speed
+        this.coord = coord
+        this.date = new Date()
     }
 }
