@@ -7,7 +7,7 @@
 }
 
 body{
-
+    font-size: 1em;
     color: ghostwhite;
 
     display: flex;
@@ -150,6 +150,7 @@ main{
     justify-content: space-between;
 
     width: 100%;
+    font-size: 0.7em;
 }
 
 .container-details span{
@@ -182,23 +183,6 @@ main{
     text-transform: lowercase;
 }
 
-.weather-details-for-week{
-    display: flex;
-
-    padding: 20px;
-}
-
-.weather-details-for-week .btn{
-
-    font-size: 0.6em;
-
-    text-shadow: 4px 4px 2px black;
-
-    border-radius: 20px;
-    padding: 10px;
-
-    width: 50px;
-}
 
 footer{
     padding-bottom: 10px;
