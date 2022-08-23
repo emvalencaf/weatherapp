@@ -9,6 +9,7 @@ export class WeatherController{
 
             await this.service.getWeatherByCityName(cityName)
             this.view.render(this.service.weatherData)
+            await this.service.getForeastWeather()
 
         } catch(e){
 

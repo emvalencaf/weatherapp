@@ -30,10 +30,6 @@ header h1, footer p{
 
 }
 
-footer p{
-    margin-bottom: 10px;
-}
-
 main{
     position: relative;
     display: flex;
@@ -53,6 +49,7 @@ main{
 
     border-radius: 25px;
     padding: 10px;
+
 }
 
 .search-container{
@@ -118,7 +115,7 @@ main{
 }
 
 .container{
-    display: flex;
+    display: none;/*flex*/
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
@@ -201,4 +198,28 @@ main{
     padding: 10px;
 
     width: 50px;
+}
+
+footer{
+    padding-bottom: 10px;
+}
+
+footer p{
+    margin-bottom: 10px;
+}
+
+footer div{
+    display: flex;
+    justify-content: space-around;
+}
+
+.fa-brands, .fab{
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(209, 222, 224, 0.668);
+
+}
+.fa-solid, .fas{
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(209, 222, 224, 0.668);
+
 }

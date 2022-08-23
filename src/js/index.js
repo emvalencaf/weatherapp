@@ -9,6 +9,7 @@ const container = document.querySelector("#weather-details")
 const form = document.querySelector("form")
 
 
+
 //instance classes
 const weatherService = new WeatherService()
 const weatherView = new WeatherView(container)
@@ -20,6 +21,7 @@ form.querySelector(".input").addEventListener("focus",() =>{
     weatherController.renderErrorOut()
 })
 
+//search weather by an city name
 form.addEventListener("submit", (evt) => {
     evt.preventDefault()
     const cityName = document.querySelector("input").value

@@ -7,8 +7,9 @@ export class WeatherView{
     }
 
     render(weatherData){
+        console.log(weatherData)
         this.clearContainer()
-    
+        this.container.style.display = "flex"
         const html = `
         <h2>${weatherData.name}, ${weatherData.country}</h2>
         <span id="current-date">${weatherData.date.toLocaleDateString(`${options.lang}`, {weekday:'long', year: 'numeric', month: 'long'})}</span>
@@ -47,5 +48,6 @@ export class WeatherView{
 
     clearContainer(){
         this.container.innerHTML = ""
+        this.container.style.display = "none"
     }
 }
