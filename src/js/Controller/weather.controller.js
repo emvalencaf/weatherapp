@@ -7,7 +7,7 @@ export class WeatherController{
     async getWeatherByCityName(cityName){
         try{
 
-            await this.service.getWeatherByCityName(cityName)
+            await this.service.getWeatherByCityName(cityName.trim())
             this.view.render(this.service.weatherData)
             await this.service.getForeastWeather()
 
