@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherApp</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+<body>
+    <header>
+
+        <h1>
+            WeatherApp
+        </h1>
+
+    </header>
+
+    <main>
+
+        <div class="card-weather">
+            <form class="search-container">
+                <input type="text" class="input" placeholder="search the weather by a city">
+                <button class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <div id="weather-details" class="container">
+                <h2>Recife, Brazil</h2>
+                <span id="current-date">monday, 22 august 2022</span>
+                <span id="current-temp">25º</span>
+                <div>
+                    <img src="#" alt="">
+                    <span id="current-weather">Rainly</span>
+                </div>
+                <div class="container-details">
+                    <span>humidity: <span id="humidity">60%</span></span>
+                    <span>wind speed: <span id="wind-speed">6.2km/h</span></span>
+                </div>
+            </div>
+            <div id="'weather-details-for-week" class="weather-details-for-week">
+                <button class="btn">sun</button>
+                <button class="btn"> mon</button>
+                <button class="btn">tues</button>
+                <button class="btn">wed</button>
+                <button class="btn">thur</button>
+                <button class="btn">fri</button>
+                <button class="btn">sat</button>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>
+            &copy; 2022, Edson Mota Valença Filho
+        </p>
+    </footer>
+    <script src="./src/js/index.js" type="module"></script>
+</body>
+</html>
