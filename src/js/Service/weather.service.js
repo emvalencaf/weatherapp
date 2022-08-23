@@ -29,13 +29,4 @@ export class WeatherService{
                 this.weatherData = new WeatherModel(name, country, humidity, temp, temp_max, temp_min, weather, speed, coord)
             })
     }
-
-    async getForeastWeather(){
-        const url = `${baseurl}forecast?lat=${this.weatherData.coord.lat}&lon=${this.weatherData.coord.lon}&appid=${options.appid}&lang=${options.lang.toLocaleLowerCase()}&units=${options.units}&cnt=6`
-
-        await createFetch(url)
-            .then(data => {
-                console.log(data)
-            })
-    }
 }
