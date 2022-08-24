@@ -14,6 +14,11 @@ export class WeatherService{
     async getWeatherByCityName(cityName){
         console.log(cityName)
 
+        const { key } = await createFetch("/appid")
+                            .then(key => key)
+
+        options.appid = key
+
         const url = `${baseurl}weather?q=${cityName}&units=${options.units}&appid=${options.appid}&lang=${options.lang.toLowerCase()}`.toLocaleLowerCase()
 
         await createFetch(url)
