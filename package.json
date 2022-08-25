@@ -4,7 +4,8 @@
   "description": "Aplicativo que consume uma API que mostra o tempo e a temperatura de uma cidade",
   "main": "index.js",
   "scripts": {
-    "start": "node server"
+    "start": "node server",
+    "dev": "nodemon -r dotenv/config server"
   },
   "keywords": [],
   "author": "",
